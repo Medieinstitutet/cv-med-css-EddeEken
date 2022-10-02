@@ -1,10 +1,13 @@
-* 
+*
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/* ------------------------------------------------ */
+/* --------------- LAYOUT ------------------------- */
+/* ------------------------------------------------ */
 body 
 { 
     background-color: lightblue;
@@ -24,12 +27,15 @@ body
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
     margin: 50px;
 }
+/* ------------------------------------------------ */
+/* --------------- LEFTSIDE-IMAGE ----------------- */
+/* ------------------------------------------------ */
 .container .leftSide {
     position: relative;
     background: #003147;
     padding: 40px;
 }  
-.container .leftSide .profileText {
+.profileText {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,21 +43,115 @@ body
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
-.container .leftSide .profileText .imgBox {
+.profileText .imgBox {
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    border-style: double;
+    border-color: whitesmoke;
 }
-.container .leftSide .profileText .imgBox img {
+.profileText .imgBox img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+/* ------------------------------------------------ */
+/* --------------- PROFILETEXT -------------------- */
+/* ------------------------------------------------ */
+.profileText h2{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+/* ------------------------------------------------ */
+/* --------------- CONTACTINFO -------------------- */
+/* ------------------------------------------------ */
+.contactInfo {
+    padding-top: 40px;
+}
+.contactInfo .title {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul {
+    position: relative;
+}
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span {
+    color: whitesmoke;
+    font-weight: 300;
+}
+/* ------------------------------------------------ */
+/* --------------- EDUCATION ---------------------- */
+/* ------------------------------------------------ */
+.contactInfo.education li { 
+    margin-bottom: 15px;
+}
+.contactInfo.education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+/* ------------------------------------------------ */
+/* --------------- LANGUAGES ---------------------- */
+/* ------------------------------------------------ */
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+/* ------------------------------------------------ */
+/* --------------- RIGHTSIDE-ABOUT ---------------- */
+/* ------------------------------------------------ */
 .container .rightSide {
     position: relative;
     background: #fff;
     padding: 40px;
 }  
+/* ------------------------------------------------ */
+/* --------------- RIGHTSIDE-ABOUT ---------------- */
+/* ------------------------------------------------ */
