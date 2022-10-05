@@ -141,12 +141,13 @@ body
     display: block;
     margin-top: 5px;
 }
-.contactInfo.language .percent div {
+.contactInfo.language .percent .blueSpace {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     background: #03a9f4;
+    display: block;
 }
 /* ------------------------------------------------ */
 /* --------------- RIGHTSIDE-ABOUT ---------------- */
